@@ -6,7 +6,7 @@ import menImage from "../public/Images/man.png";
 
 const Navbar = () => {
   
-  const {setIsLoggedIn,loggedUser,setLoggedUser,isActive,setIsActive,goToCategories,navigate,setProducts,setSearchValue,showCart, setShowCart,cartitems,showProfile, setShowProfile} = useContext(MyStore);
+  const {isLoggedIn,setIsLoggedIn,loggedUser,setLoggedUser,isActive,setIsActive,goToCategories,navigate,setProducts,setSearchValue,showCart, setShowCart,cartitems,showProfile, setShowProfile} = useContext(MyStore);
   
 
  
@@ -164,7 +164,7 @@ const Navbar = () => {
           </p>
 
           <p className="mt-0.5 truncate text-xs text-slate-500">
-            {loggedUser.email || 'sidakpreet@example.com'}
+            {loggedUser.email || ''}
           </p>
         </div>
       </div>
@@ -173,6 +173,7 @@ const Navbar = () => {
       <div className="my-4 border-t border-slate-200" />
 
       {/* Logout */}
+        { isLoggedIn ? 
       <button
         onClick={() => {
           setShowProfile(false);
@@ -195,7 +196,29 @@ const Navbar = () => {
         <span className="text-base">↪</span>
         Logout
       </button>
-    </div>
+      : 
+      <button
+        onClick={() => {
+          
+         
+          navigate('/login');
+        }}
+        className="
+          flex w-full items-center gap-3
+          rounded-lg
+          px-3 py-2.5
+          text-sm font-medium
+          text-slate-600
+          transition-colors duration-200
+          hover:bg-red-50
+          hover:text-red-600
+        "
+      >
+        <span className="text-base">↪</span>
+        Login
+      </button>
+
+      }    </div>
   )}
 </div>
 
