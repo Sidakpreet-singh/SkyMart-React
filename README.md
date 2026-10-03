@@ -1,12 +1,65 @@
-# React + Vite
+# 🛒 SkyMart — E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkyMart is a modern and responsive e-commerce web application built with **React.js**. It provides a smooth shopping experience with product browsing, dynamic product details, category filtering, search, sorting, cart management, and responsive UI.
 
-Currently, two official plugins are available:
+The project focuses on building a real-world React application while practicing **component-based architecture, React Context API, routing, dynamic routes, state management, and API integration**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🏠 Modern responsive homepage
+- 🛍️ Product listing and shopping page
+- 🔎 Product search
+- 🗂️ Category-based filtering
+- 💰 Price-based filtering
+- ⭐ Product rating sorting
+- 📊 Multiple product sorting options
+- 📦 Dynamic product details pages
+- 🔗 Dynamic routing using React Router
+- 🛒 Add products to cart
+- ➕ Increase product quantity
+- ➖ Decrease product quantity
+- 🧮 Dynamic cart quantity management
+- 📱 Responsive design
+- 🎨 Clean and modern UI
+- ⚡ API-based product data
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **React.js**
+- **JavaScript**
+- **React Router**
+- **Tailwind CSS**
+- **Axios**
+- **Context API**
+
+### API
+
+Product data is fetched from:
+
+**DummyJSON Products API**
+
+---
+
+## 📂 Project Structure
+
+```text
+SkyMart/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── Components/
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │   └── ...
+│   │
+│   ├── Pages/
+│   │   ├── Home.jsx
+│   │   ├── Shop.jsx
