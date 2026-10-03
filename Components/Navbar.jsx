@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router";
 import { MyStore } from "../Context/MyContext";
-import CartSidebar from "./CartSideBar";
+import CartSidebar from "./CartSidebar";
 import menImage from "../public/Images/man.png";
 
 const Navbar = () => {
