@@ -6,7 +6,7 @@ import { ContextProvider } from '../Context/MyContext.jsx'
 import { BrowserRouter } from 'react-router'
 
 createRoot(document.getElementById('root')).render(
- <BrowserRouter><ContextProvider><App /></ContextProvider></BrowserRouter> 
+ <BrowserRouter basename="/SkyMart-React"><ContextProvider><App /></ContextProvider></BrowserRouter> 
   
   
 )
