@@ -173,7 +173,7 @@ const Navbar = () => {
       <div className="my-4 border-t border-slate-200" />
 
       {/* Logout */}
-        { isLoggedIn ? 
+        { loggedUser.email ? 
       <button
         onClick={() => {
           setShowProfile(false);
