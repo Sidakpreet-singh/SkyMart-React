@@ -179,7 +179,7 @@ const Navbar = () => {
           setShowProfile(false);
           setLoggedUser({});
           setIsLoggedIn(false);
-          localStorage.setItem('IsLoggedIn',JSON.stringify(false));
+          localStorage.setItem('isLoggedIn',JSON.stringify(false));
           navigate('/login');
         }}
         className="
